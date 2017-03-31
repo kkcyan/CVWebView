@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "CVWebViewController.h"
 @interface ViewController ()
 
 @end
@@ -26,4 +26,16 @@
 }
 
 
+- (IBAction)clickBtn:(UIButton *)sender {
+    
+    CVWebViewController * web = [CVWebViewController new];
+    web.progressColor = [UIColor redColor];
+    web.titleName = @"CV Web View";
+    web.webViewString = @"https://www.baidu.com";
+    [web cVWebViewDealMethodWithLink:@"nuomi" block:^{
+        NSLog(@"处理数据");
+    }];
+    [self.navigationController pushViewController:web animated:YES];
+    
+}
 @end

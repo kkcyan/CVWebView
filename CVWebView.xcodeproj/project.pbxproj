@@ -15,6 +15,9 @@
 		4CAD65971E8DF37800C5FECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAD65951E8DF37800C5FECD /* LaunchScreen.storyboard */; };
 		4CAD65A21E8DF37800C5FECD /* CVWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAD65A11E8DF37800C5FECD /* CVWebViewTests.m */; };
 		4CAD65AD1E8DF37800C5FECD /* CVWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAD65AC1E8DF37800C5FECD /* CVWebViewUITests.m */; };
+		4CAD65BD1E8DF3E700C5FECD /* CVWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAD65BC1E8DF3E700C5FECD /* CVWebViewController.m */; };
+		4CAD65C01E8DF40300C5FECD /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAD65BF1E8DF40300C5FECD /* UIViewController+BackButtonHandler.m */; };
+		4CAD65C31E8DFC2800C5FECD /* NSString+Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAD65C21E8DFC2800C5FECD /* NSString+Other.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		4CAD65A81E8DF37800C5FECD /* CVWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAD65AC1E8DF37800C5FECD /* CVWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVWebViewUITests.m; sourceTree = "<group>"; };
 		4CAD65AE1E8DF37800C5FECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CAD65BB1E8DF3E700C5FECD /* CVWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVWebViewController.h; sourceTree = "<group>"; };
+		4CAD65BC1E8DF3E700C5FECD /* CVWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVWebViewController.m; sourceTree = "<group>"; };
+		4CAD65BE1E8DF40300C5FECD /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		4CAD65BF1E8DF40300C5FECD /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		4CAD65C11E8DFC2800C5FECD /* NSString+Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Other.h"; sourceTree = "<group>"; };
+		4CAD65C21E8DFC2800C5FECD /* NSString+Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Other.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		4CAD657B1E8DF37800C5FECD = {
 			isa = PBXGroup;
 			children = (
+				4CAD65BA1E8DF3A300C5FECD /* CVWebViewGroup */,
 				4CAD65861E8DF37800C5FECD /* CVWebView */,
 				4CAD65A01E8DF37800C5FECD /* CVWebViewTests */,
 				4CAD65AB1E8DF37800C5FECD /* CVWebViewUITests */,
@@ -138,6 +148,19 @@
 				4CAD65AE1E8DF37800C5FECD /* Info.plist */,
 			);
 			path = CVWebViewUITests;
+			sourceTree = "<group>";
+		};
+		4CAD65BA1E8DF3A300C5FECD /* CVWebViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				4CAD65C11E8DFC2800C5FECD /* NSString+Other.h */,
+				4CAD65C21E8DFC2800C5FECD /* NSString+Other.m */,
+				4CAD65BE1E8DF40300C5FECD /* UIViewController+BackButtonHandler.h */,
+				4CAD65BF1E8DF40300C5FECD /* UIViewController+BackButtonHandler.m */,
+				4CAD65BB1E8DF3E700C5FECD /* CVWebViewController.h */,
+				4CAD65BC1E8DF3E700C5FECD /* CVWebViewController.m */,
+			);
+			path = CVWebViewGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAD65C01E8DF40300C5FECD /* UIViewController+BackButtonHandler.m in Sources */,
 				4CAD658F1E8DF37800C5FECD /* ViewController.m in Sources */,
 				4CAD658C1E8DF37800C5FECD /* AppDelegate.m in Sources */,
+				4CAD65BD1E8DF3E700C5FECD /* CVWebViewController.m in Sources */,
+				4CAD65C31E8DFC2800C5FECD /* NSString+Other.m in Sources */,
 				4CAD65891E8DF37800C5FECD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CVWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.k.k.cyan.van.CVWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CVWebView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.k.k.cyan.van.CVWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
